@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 import menjacnica.Valuta;
 
-public class Implemntacija implements Interfejs {
+public class Implementacija implements Interfejs {
 	
 	LinkedList<Valuta> valute = new LinkedList<Valuta>();
 

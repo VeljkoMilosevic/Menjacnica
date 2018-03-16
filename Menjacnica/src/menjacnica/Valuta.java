@@ -14,36 +14,60 @@ public class Valuta {
 		return valuta;
 	}
 	public void setValuta(String valuta) {
+		if(valuta==null) {
+					System.out.println("Pogresan unos naziva valute");
+						return;
+					}
 		this.valuta = valuta;
 	}
 	public String getSkracenNaziv() {
 		return skracenNaziv;
 	}
 	public void setSkracenNaziv(String skracenNaziv) {
+		if(skracenNaziv==null) {
+						System.out.println("Pogresan unos skracenog naziva");
+						return;
+					}
 		this.skracenNaziv = skracenNaziv;
 	}
 	public GregorianCalendar getDatum() {
 		return datum;
 	}
 	public void setDatum(GregorianCalendar datum) {
+		if(datum==null) {
+					System.out.println("Pogresan unos datuma");
+						return;
+					}
 		this.datum = datum;
 	}
 	public double getProdajniKurs() {
 		return prodajniKurs;
 	}
 	public void setProdajniKurs(double prodajniKurs) {
+		if(prodajniKurs<=0) {
+					System.out.println("Pogresan unos prodajnog kursa");
+						return;
+					}
 		this.prodajniKurs = prodajniKurs;
 	}
 	public double getKupovniKurs() {
 		return kupovniKurs;
 	}
 	public void setKupovniKurs(double kupovniKurs) {
+		if(kupovniKurs<=0) {
+						System.out.println("Pogresan unos kupovnog kursa");
+						return;
+					}
 		this.kupovniKurs = kupovniKurs;
 	}
 	public double getSrednjiKurs() {
 		return srednjiKurs;
 	}
 	public void setSrednjiKurs(double srednjiKurs) {
+		if(srednjiKurs<=0) {
+						System.out.println("Pogresan unos srednjeg kursa");
+						return;
+					}
 		this.srednjiKurs = srednjiKurs;
 	}
 	@Override

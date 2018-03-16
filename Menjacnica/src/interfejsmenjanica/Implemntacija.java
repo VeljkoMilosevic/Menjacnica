@@ -8,6 +8,7 @@ public class Implemntacija implements Interfejs {
 	
 	LinkedList<Valuta> valute = new LinkedList<Valuta>();
 
+	
 	@Override
 	public void dodadavanjeKursa(Valuta m) {
 		for(int i=0;i<valute.size();i++) {
